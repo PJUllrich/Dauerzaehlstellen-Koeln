@@ -19,7 +19,7 @@ def hole_zaehler_uebersicht(save=True):
         return r.json()
 
 
-# Holt die Zählerstände pro Tag für den Vorgebirgspark
+# Holt die Zählerstände fuer einen Zaehler und speichert diese
 def hole_zaehler_details(idPdc, von, bis, filename, interval=4):
     # interval: 4 = taeglich, 5 = woechentlich, 6 = monatlich
     r = requests.post(URL_COUNTER_DATA, data={
@@ -42,6 +42,7 @@ def hole_zaehler_details(idPdc, von, bis, filename, interval=4):
                 writer.writerow(row)
 
 
+# Holt alle Zaehlerstaende fuer einen Zeitraum fuer alle Zaehler
 def hole_alle_zaehler_details():
     von = '01/01/2020'
     bis = '11/04/2020'
