@@ -1,0 +1,577 @@
+[
+  {
+    "total": "66821",
+    "mainPratique": 2,
+    "id_pdc_img": null,
+    "today": "11/04/2020",
+    "fin": "null",
+    "publicMessage": null,
+    "filtre": 0,
+    "option1": "",
+    "lastDay": "1717",
+    "debutPeriode": "01/01/2020",
+    "pictoPublic": null,
+    "idPdc": "100019755",
+    "lat": "50.913017",
+    "logo": "https://www.eco-visio.net/Logos/677/1332317077022.jpg",
+    "lon": "6.948681",
+    "pratique": [],
+    "nomOrganisme": "Dauerz\u00e4hlstellen Radverkehr K\u00f6ln",
+    "photo": [
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019755/14979473571511.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019755/14331966937658.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019755/14331966567041.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019755/14331966622635.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019755/14979390841782.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019755/14331966639137.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019755/14979473573070.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019755/14979473576763.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019755/14331966609233.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019755/14979390843061.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019755/14331966595990.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019755/14331966583562.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019755/14979473574882.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019755/14331966637836.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019755/14979390840070.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019755/14331966610914.jpg"
+      }
+    ],
+    "nom": "08 Vorgebirgspark",
+    "current_year_default": 1,
+    "moyD": "662",
+    "lienPublic": "100019755",
+    "pays": "de",
+    "formule_site": 0,
+    "debut": "28/02/2012",
+    "externalUrl": "http://www.stadt-koeln.de/leben-in-koeln/verkehr/radfahren/",
+    "sig": 2
+  },
+  {
+    "total": "222607",
+    "mainPratique": 2,
+    "id_pdc_img": null,
+    "today": "11/04/2020",
+    "fin": "null",
+    "publicMessage": null,
+    "filtre": 0,
+    "option1": "",
+    "lastDay": "2950",
+    "debutPeriode": "01/01/2020",
+    "pictoPublic": null,
+    "idPdc": "100019756",
+    "lat": "50.930084",
+    "logo": "https://www.eco-visio.net/Logos/677/1332317077022.jpg",
+    "lon": "6.930417",
+    "pratique": [],
+    "nomOrganisme": "Dauerz\u00e4hlstellen Radverkehr K\u00f6ln",
+    "photo": [
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019756/14331968196540.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019756/14331968289997.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019756/14331968284346.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019756/14331968305178.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019756/14331968244994.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019756/14979382889981.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019756/14331968495171.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019756/14331968225463.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019756/14331968185262.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019756/14979382884630.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019756/14331968252295.jpg"
+      }
+    ],
+    "nom": "09 Alphons-Sibermann-Weg",
+    "current_year_default": 1,
+    "moyD": "2204",
+    "lienPublic": "100019756",
+    "pays": "de",
+    "formule_site": 0,
+    "debut": "28/02/2012",
+    "externalUrl": "http://www.stadt-koeln.de/leben-in-koeln/verkehr/radfahren/",
+    "sig": 2
+  },
+  {
+    "total": "170913",
+    "mainPratique": 2,
+    "id_pdc_img": null,
+    "today": "11/04/2020",
+    "fin": "null",
+    "publicMessage": null,
+    "filtre": 0,
+    "option1": "",
+    "lastDay": "4196",
+    "debutPeriode": "01/01/2020",
+    "pictoPublic": null,
+    "idPdc": "100019757",
+    "lat": "50.933098",
+    "logo": "https://www.eco-visio.net/Logos/677/1332317077022.jpg",
+    "lon": "6.8929157",
+    "pratique": [],
+    "nomOrganisme": "Dauerz\u00e4hlstellen Radverkehr K\u00f6ln",
+    "photo": [
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019757/14331972748220.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019757/14979390159410.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019757/14331972746901.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019757/14324146805780.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019757/14979472510540.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019757/14979472507501.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019757/14331972792092.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019757/14331972779743.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019757/14331972799335.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019757/14331972795734.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019757/14979472509102.jpg"
+      }
+    ],
+    "nom": "10 Stadtwald",
+    "current_year_default": 1,
+    "moyD": "1692",
+    "lienPublic": "100019757",
+    "pays": "de",
+    "formule_site": 0,
+    "debut": "28/02/2012",
+    "externalUrl": "http://www.stadt-koeln.de/leben-in-koeln/verkehr/radfahren/",
+    "sig": 2
+  },
+  {
+    "total": "167184",
+    "mainPratique": 2,
+    "id_pdc_img": null,
+    "today": "11/04/2020",
+    "fin": "null",
+    "publicMessage": null,
+    "filtre": 0,
+    "option1": "",
+    "lastDay": "6137",
+    "debutPeriode": "01/01/2020",
+    "pictoPublic": null,
+    "idPdc": "100019758",
+    "lat": "50.962322",
+    "logo": "https://www.eco-visio.net/Logos/677/1332317077022.jpg",
+    "lon": "6.986403",
+    "pratique": [],
+    "nomOrganisme": "Dauerz\u00e4hlstellen Radverkehr K\u00f6ln",
+    "photo": [
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019758/14331969278075.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100019758/14979386522580.jpg"
+      }
+    ],
+    "nom": "11 Niederl\u00e4nder Ufer",
+    "current_year_default": 1,
+    "moyD": "1655",
+    "lienPublic": "100019758",
+    "pays": "de",
+    "formule_site": 0,
+    "debut": "28/02/2012",
+    "externalUrl": "http://www.stadt-koeln.de/leben-in-koeln/verkehr/radfahren/",
+    "sig": 2
+  },
+  {
+    "total": "137480",
+    "mainPratique": 2,
+    "id_pdc_img": null,
+    "today": "11/04/2020",
+    "fin": "null",
+    "publicMessage": null,
+    "filtre": 0,
+    "option1": "",
+    "lastDay": "5866",
+    "debutPeriode": "01/01/2020",
+    "pictoPublic": null,
+    "idPdc": "100021727",
+    "lat": "50.914497",
+    "logo": "https://www.eco-visio.net/Logos/677/1332317077022.jpg",
+    "lon": "6.9818854",
+    "pratique": [],
+    "nomOrganisme": "Dauerz\u00e4hlstellen Radverkehr K\u00f6ln",
+    "photo": [
+      {
+        "lien": "https://www.eco-visio.net/Photos/100021727/14979474157831.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100021727/14979474154382.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100021727/14325394936020.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100021727/14979474155710.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100021727/14325395099211.jpg"
+      }
+    ],
+    "nom": "07 Alfred Sch\u00fctte kpl",
+    "current_year_default": 1,
+    "moyD": "1361",
+    "lienPublic": "100021727",
+    "pays": "de",
+    "formule_site": 3459,
+    "debut": "28/02/2012",
+    "externalUrl": "http://www.stadt-koeln.de/leben-in-koeln/verkehr/radfahren/",
+    "sig": 2
+  },
+  {
+    "total": "244254",
+    "mainPratique": 2,
+    "id_pdc_img": null,
+    "today": "11/04/2020",
+    "fin": "null",
+    "publicMessage": null,
+    "filtre": 0,
+    "option1": "",
+    "lastDay": "2149",
+    "debutPeriode": "01/01/2020",
+    "pictoPublic": null,
+    "idPdc": "100023269",
+    "lat": "50.9182",
+    "logo": "https://www.eco-visio.net/Logos/677/1332317077022.jpg",
+    "lon": "6.960489",
+    "pratique": [],
+    "nomOrganisme": "Dauerz\u00e4hlstellen Radverkehr K\u00f6ln",
+    "photo": [
+      {
+        "lien": "https://www.eco-visio.net/Photos/100023269/14979468814081.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100023269/14979468812210.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100023269/14979468815562.jpg"
+      }
+    ],
+    "nom": "01 Bonner Stra\u00dfe Rad",
+    "current_year_default": 1,
+    "moyD": "2418",
+    "lienPublic": "100023269",
+    "pays": "de",
+    "formule_site": 3635,
+    "debut": "28/02/2012",
+    "externalUrl": "http://www.stadt-koeln.de/leben-in-koeln/verkehr/radfahren/",
+    "sig": 2
+  },
+  {
+    "total": "422132",
+    "mainPratique": 2,
+    "id_pdc_img": null,
+    "today": "11/04/2020",
+    "fin": "null",
+    "publicMessage": null,
+    "filtre": 0,
+    "option1": "",
+    "lastDay": "4264",
+    "debutPeriode": "01/01/2020",
+    "pictoPublic": null,
+    "idPdc": "100023270",
+    "lat": "50.945816",
+    "logo": "https://www.eco-visio.net/Logos/677/1332317077022.jpg",
+    "lon": "6.9266076",
+    "pratique": [],
+    "nomOrganisme": "Dauerz\u00e4hlstellen Radverkehr K\u00f6ln",
+    "photo": [
+      {
+        "lien": "https://www.eco-visio.net/Photos/100023270/14979469228781.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100023270/14979469229890.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100023270/14979469231112.jpg"
+      }
+    ],
+    "nom": "02 Venloer Stra\u00dfe Rad",
+    "current_year_default": 1,
+    "moyD": "4180",
+    "lienPublic": "100023270",
+    "pays": "de",
+    "formule_site": 3636,
+    "debut": "28/02/2012",
+    "externalUrl": "http://www.stadt-koeln.de/leben-in-koeln/verkehr/radfahren/",
+    "sig": 2
+  },
+  {
+    "total": "183434",
+    "mainPratique": 2,
+    "id_pdc_img": null,
+    "today": "11/04/2020",
+    "fin": "null",
+    "publicMessage": null,
+    "filtre": 0,
+    "option1": "",
+    "lastDay": "2194",
+    "debutPeriode": "01/01/2020",
+    "pictoPublic": null,
+    "idPdc": "100029854",
+    "lat": "50.94118",
+    "logo": "https://www.eco-visio.net/Logos/677/1332317077022.jpg",
+    "lon": "6.9701",
+    "pratique": [
+      {
+        "id": 101029854,
+        "pratique": 2
+      },
+      {
+        "id": 102029854,
+        "pratique": 2
+      },
+      {
+        "id": 103029854,
+        "pratique": 2
+      },
+      {
+        "id": 104029854,
+        "pratique": 2
+      }
+    ],
+    "nomOrganisme": "Dauerz\u00e4hlstellen Radverkehr K\u00f6ln",
+    "photo": [
+      {
+        "lien": "https://www.eco-visio.net/Photos/100029854/14979393524292.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100029854/14582230322260.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100029854/14582070010340.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100029854/14979393527040.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100029854/14582070004670.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100029854/14979393525621.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100029854/14582230319430.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100029854/14582237264960.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100029854/14582070000810.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100029854/14979393529843.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100029854/14582230320390.jpg"
+      }
+    ],
+    "nom": "04 Hohenzollernbr\u00fccke",
+    "current_year_default": 1,
+    "moyD": "1816",
+    "lienPublic": "100029854",
+    "pays": "de",
+    "formule_site": 0,
+    "debut": "28/02/2012",
+    "externalUrl": "http://www.stadt-koeln.de/leben-in-koeln/verkehr/radfahren/",
+    "sig": 2
+  },
+  {
+    "total": "285064",
+    "mainPratique": 2,
+    "id_pdc_img": null,
+    "today": "11/04/2020",
+    "fin": "null",
+    "publicMessage": null,
+    "filtre": 0,
+    "option1": "",
+    "lastDay": "2733",
+    "debutPeriode": "01/01/2020",
+    "pictoPublic": null,
+    "idPdc": "100030418",
+    "lat": "50.93637257134968",
+    "logo": "https://www.eco-visio.net/Logos/677/1332317077022.jpg",
+    "lon": "6.947836756773378",
+    "pratique": [],
+    "nomOrganisme": "Dauerz\u00e4hlstellen Radverkehr K\u00f6ln",
+    "photo": [
+      {
+        "lien": "https://www.eco-visio.net/Photos/100030418/14979470489572.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100030418/14979470487820.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100030418/14979470493743.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100030418/14979470487931.jpg"
+      }
+    ],
+    "nom": "06 Neumarkt kpl",
+    "current_year_default": 1,
+    "moyD": "2822",
+    "lienPublic": "100030418",
+    "pays": "de",
+    "formule_site": 4462,
+    "debut": "28/02/2012",
+    "externalUrl": "http://www.stadt-koeln.de/leben-in-koeln/verkehr/radfahren/",
+    "sig": 2
+  },
+  {
+    "total": "300135",
+    "mainPratique": 2,
+    "id_pdc_img": null,
+    "today": "11/04/2020",
+    "fin": "null",
+    "publicMessage": null,
+    "filtre": 0,
+    "option1": "",
+    "lastDay": "4831",
+    "debutPeriode": "01/01/2020",
+    "pictoPublic": null,
+    "idPdc": "100044729",
+    "lat": "50.93649",
+    "logo": "https://www.eco-visio.net/Logos/677/1332317077022.jpg",
+    "lon": "6.96658",
+    "pratique": [],
+    "nomOrganisme": "Dauerz\u00e4hlstellen Radverkehr K\u00f6ln",
+    "photo": [
+      {
+        "lien": "https://www.eco-visio.net/Photos/100044729/15246662814233.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100044729/15246662808172.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100044729/15246662816185.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100044729/15246662815224.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100044729/15246662808761.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100044729/15246662808520.jpg"
+      }
+    ],
+    "nom": "05 Deutzer Br\u00fccke kpl.",
+    "current_year_default": 1,
+    "moyD": "2972",
+    "lienPublic": "100044729",
+    "pays": "de",
+    "formule_site": 6261,
+    "debut": "28/02/2012",
+    "externalUrl": "http://www.stadt-koeln.de/leben-in-koeln/verkehr/radfahren/",
+    "sig": 2
+  },
+  {
+    "total": "234156",
+    "mainPratique": 2,
+    "id_pdc_img": null,
+    "today": "11/04/2020",
+    "fin": "null",
+    "publicMessage": null,
+    "filtre": 0,
+    "option1": "",
+    "lastDay": "3153",
+    "debutPeriode": "01/01/2020",
+    "pictoPublic": null,
+    "idPdc": "100045094",
+    "lat": "50.92054907885211",
+    "logo": "https://www.eco-visio.net/Logos/677/1332317077022.jpg",
+    "lon": "6.94476961008295",
+    "pratique": [],
+    "nomOrganisme": "Dauerz\u00e4hlstellen Radverkehr K\u00f6ln",
+    "photo": [
+      {
+        "lien": "https://www.eco-visio.net/Photos/100045094/15282000106483.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100045094/15282000099900.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100045094/15282000100601.jpg"
+      },
+      {
+        "lien": "https://www.eco-visio.net/Photos/100045094/15282000101672.jpg"
+      }
+    ],
+    "nom": "12 Vorgebirgswall",
+    "current_year_default": 1,
+    "moyD": "2318",
+    "lienPublic": "100045094",
+    "pays": "de",
+    "formule_site": 0,
+    "debut": "28/02/2012",
+    "externalUrl": "http://www.stadt-koeln.de/leben-in-koeln/verkehr/radfahren/",
+    "sig": 2
+  }
+]
