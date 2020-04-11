@@ -22,7 +22,6 @@ def hole_zaehler_uebersicht(save=True):
 # Holt die Zählerstände pro Tag für den Vorgebirgspark
 def hole_zaehler_details(idPdc, von, bis, filename, interval=4):
     # interval: 4 = taeglich, 5 = woechentlich, 6 = monatlich
-    # idPdc: 100019755 scheint die Id fuer den Zaehler im Vorgebirgspark zu sein
     r = requests.post(URL_COUNTER_DATA, data={
         'idOrganisme': ID_KOELN,
         'idPdc': idPdc,
