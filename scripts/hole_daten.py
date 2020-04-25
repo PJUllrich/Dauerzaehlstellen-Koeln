@@ -1,6 +1,7 @@
 import requests
 import json
 import csv
+from datetime import datetime
 from collections.abc import Iterable
 
 ID_KOELN = 677
@@ -33,13 +34,16 @@ def hole_zaehler_details(idPdc, von, bis, filename, interval=4):
 
     with open(DATEN_FOLDER_PATH + filename + '.csv', mode='w') as f:
         writer = csv.writer(
-            f, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+            f, quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
         writer.writerow(['Datum', 'Zaehlerstand'])
 
         for row in r.json():
             if isinstance(row, Iterable):
-                writer.writerow(row)
+                date_german = datetime.strptime(
+                    row[0], "%m/%d/%Y").strftime("%d.%m.%Y")
+
+                writer.writerow([date_german, row[1]])
 
 
 # Holt alle Zaehlerstaende fuer einen Zeitraum fuer alle Zaehler
