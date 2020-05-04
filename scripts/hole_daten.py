@@ -32,24 +32,25 @@ def hole_zaehler_details(idPdc, von, bis, filename, interval=4):
         'pratiques': ''
     })
 
-    with open(DATEN_FOLDER_PATH + filename + '.csv', mode='a') as f:
+    with open(DATEN_FOLDER_PATH + filename + '.csv', mode='w') as f:
         writer = csv.writer(
             f, quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
-        # writer.writerow(['Datum', 'Zaehlerstand'])
+        writer.writerow(['Datum', 'Zaehlerstand'])
 
         for row in r.json():
             if isinstance(row, Iterable):
                 date_german = datetime.strptime(
                     row[0], "%m/%d/%Y").strftime("%d.%m.%Y")
+                count = int(float(row[1]))
 
-                writer.writerow([date_german, row[1]])
+                writer.writerow([date_german, count])
 
 
 # Holt alle Zaehlerstaende fuer einen Zeitraum fuer alle Zaehler
 def hole_alle_zaehler_details():
-    von = '25/04/2020'
-    bis = '30/04/2020'
+    von = '01/06/2016'
+    bis = '03/05/2020'
     uebersicht = hole_zaehler_uebersicht(save=False)
     for row in uebersicht:
         idPdc = row['idPdc']
