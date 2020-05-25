@@ -1,7 +1,7 @@
 import requests
 import json
 import csv
-from datetime import datetime
+from datetime import datetime, timedelta
 from collections.abc import Iterable
 
 ID_KOELN = 677
@@ -10,8 +10,16 @@ URL_COUNTER_DATA = 'http://www.eco-public.com/ParcPublic/CounterData'
 DATEN_FOLDER_PATH = 'Daten/'
 
 
+def hole_daten(von, bis):
+    uebersicht = hole_zaehler_uebersicht(save=False)
+    for row in uebersicht:
+        idPdc = row['idPdc']
+        filename = row['nom'].replace(' ', '_').lower()
+        hole_zaehler_details(idPdc, von, bis, filename)
+
+
 # Hole Daten zu allen Dauerzaehlstellen
-def hole_zaehler_uebersicht(save=True):
+def hole_zaehler_uebersicht(save=False):
     r = requests.post(URL_COUNTER_LIST, data={'id': ID_KOELN})
     if save:
         with open(DATEN_FOLDER_PATH + 'counter_list.json', 'w') as f:
@@ -52,14 +60,18 @@ def hole_zaehler_details(idPdc, von, bis, filename, append=True, interval=4):
 
 # Holt alle Zaehlerstaende fuer einen Zeitraum fuer alle Zaehler
 def hole_alle_zaehler_details():
-    von = '22/05/2020'
+    von = '01/01/2020'
     bis = '25/05/2020'
-    uebersicht = hole_zaehler_uebersicht(save=False)
-    for row in uebersicht:
-        idPdc = row['idPdc']
-        filename = row['nom'].replace(' ', '_').lower()
-        hole_zaehler_details(idPdc, von, bis, filename)
+
+    hole_daten(von, bis)
+
+
+def hole_daten_fuer_gestern():
+    gestern = datetime.now() - timedelta(days=1)
+    datum_gestern = gestern.strftime("%d/%m/%Y")
+    hole_daten(datum_gestern, datum_gestern)
 
 
 if __name__ == "__main__":
-    hole_alle_zaehler_details()
+    # hole_alle_zaehler_details()
+    hole_daten_fuer_gestern()
