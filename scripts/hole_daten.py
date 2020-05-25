@@ -7,7 +7,7 @@ from collections.abc import Iterable
 ID_KOELN = 677
 URL_COUNTER_LIST = 'http://www.eco-public.com/ParcPublic/GetCounterList'
 URL_COUNTER_DATA = 'http://www.eco-public.com/ParcPublic/CounterData'
-DATEN_FOLDER_PATH = 'Daten/'
+DATEN_FOLDER_PATH = 'daten/'
 
 
 def hole_daten(von, bis):
