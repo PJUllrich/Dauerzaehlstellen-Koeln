@@ -52,8 +52,8 @@ def hole_zaehler_details(idPdc, von, bis, filename, append=True, interval=4):
 
 # Holt alle Zaehlerstaende fuer einen Zeitraum fuer alle Zaehler
 def hole_alle_zaehler_details():
-    von = '04/05/2020'
-    bis = '22/05/2020'
+    von = '22/05/2020'
+    bis = '25/05/2020'
     uebersicht = hole_zaehler_uebersicht(save=False)
     for row in uebersicht:
         idPdc = row['idPdc']
