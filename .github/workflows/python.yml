@@ -2,7 +2,7 @@ name: Update data
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "1-5 5 * * *"
 
 jobs:
   execute:
@@ -15,17 +15,8 @@ jobs:
         with:
           python-version: 3.8
 
-      - name: Cache pip
-        uses: actions/cache@v1
-        with:
-          # This path is specific to Ubuntu
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install requests
 
       - name: Update data
         run: python3 scripts/hole_daten.py
