@@ -13,14 +13,14 @@ DATEN_FOLDER_PATH = 'daten/'
 def hole_datum_des_letzten_updates():
     try:
         with open(DATEN_FOLDER_PATH + 'letztes_update.txt', "r") as f:
-            return datetime.strptime(f.read(), "%d.%m.%Y")
+            return datetime.strptime(f.read(), "%d/%m/%Y")
     except IOError:
         return None
 
 
 def update_datum_des_letzten_updates(datum):
     with open(DATEN_FOLDER_PATH + 'letztes_update.txt', "w") as f:
-        f.write(datum.strftime("%d.%m.%Y"))
+        f.write(datum.strftime("%d/%m/%Y"))
 
 
 def hole_daten(von, bis):
@@ -81,12 +81,18 @@ def hole_alle_zaehler_details():
 
 def hole_daten_fuer_gestern():
     gestern = datetime.today() - timedelta(days=1)
-
     letztes_update_am = hole_datum_des_letzten_updates()
-    if letztes_update_am is None or letztes_update_am.date() < gestern.date():
-        datum_gestern = gestern.strftime("%d/%m/%Y")
-        hole_daten(datum_gestern, datum_gestern)
-        update_datum_des_letzten_updates(gestern)
+
+    str_datum_gestern = gestern.strftime("%d/%m/%Y")
+
+    if letztes_update_am is None or letztes_update_am.date() == gestern.date():
+        hole_daten(str_datum_gestern, str_datum_gestern)
+    elif letztes_update_am.date() < gestern.date():
+        datum_ab_wann_daten_fehlen = letztes_update_am + timedelta(days=1)
+        str_datum_fehlend = datum_ab_wann_daten_fehlen.strftime("%d/%m/%Y")
+        hole_daten(str_datum_fehlend, str_datum_gestern)
+
+    update_datum_des_letzten_updates(gestern)
 
 
 if __name__ == "__main__":
