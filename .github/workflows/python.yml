@@ -10,6 +10,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        
       - name: Set up Python 3.8
         uses: actions/setup-python@v2
         with:
@@ -23,9 +24,12 @@ jobs:
 
       - name: Commit files
         run: |
+          git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git commit -m "Update data" -a
+          
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
