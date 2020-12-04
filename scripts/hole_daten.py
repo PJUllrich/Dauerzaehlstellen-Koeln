@@ -5,8 +5,8 @@ from datetime import datetime, timedelta
 from collections.abc import Iterable
 
 ID_KOELN = 677
-URL_COUNTER_LIST = 'http://www.eco-public.com/ParcPublic/GetCounterList'
-URL_COUNTER_DATA = 'http://www.eco-public.com/ParcPublic/CounterData'
+URL_COUNTER_LIST = f'https://www.eco-visio.net/api/aladdin/1.0.0/pbl/publicwebpageplus/{ID_KOELN}?withNull=true'
+URL_COUNTER_DATA = 'https://www.eco-visio.net/api/aladdin/1.0.0/pbl/publicwebpageplus/data'
 DATEN_FOLDER_PATH = 'daten/'
 
 
@@ -27,13 +27,14 @@ def hole_daten(von, bis):
     uebersicht = hole_zaehler_uebersicht(save=False)
     for row in uebersicht:
         idPdc = row['idPdc']
+        cumulFlowId = row['cumulFlowId']
         filename = row['nom'].replace(' ', '_').lower()
-        hole_zaehler_details(idPdc, von, bis, filename)
+        hole_zaehler_details(cumulFlowId, idPdc, von, bis, filename)
 
 
 # Hole Daten zu allen Dauerzaehlstellen
 def hole_zaehler_uebersicht(save=False):
-    r = requests.post(URL_COUNTER_LIST, data={'id': ID_KOELN})
+    r = requests.get(URL_COUNTER_LIST)
     if save:
         with open(DATEN_FOLDER_PATH + 'counter_list.json', 'w') as f:
             json.dump(r.json(), f)
@@ -42,15 +43,16 @@ def hole_zaehler_uebersicht(save=False):
 
 
 # Holt die Zählerstände fuer einen Zaehler und speichert diese
-def hole_zaehler_details(idPdc, von, bis, filename, append=True, interval=4):
+def hole_zaehler_details(cumulFlowId, idPdc, von, bis, filename, append=True, interval=4):
     # interval: 4 = taeglich, 5 = woechentlich, 6 = monatlich
-    r = requests.post(URL_COUNTER_DATA, data={
+    url = f'{URL_COUNTER_DATA}/{cumulFlowId}'
+    r = requests.get(url, params={
         'idOrganisme': ID_KOELN,
         'idPdc': idPdc,
         'debut': von,
         'fin': bis,
         'interval': interval,
-        'pratiques': ''
+        'pratiques': idPdc
     })
 
     mode = 'a' if append else 'w'
@@ -64,8 +66,8 @@ def hole_zaehler_details(idPdc, von, bis, filename, append=True, interval=4):
 
         for row in r.json():
             if isinstance(row, Iterable):
-                date_german = datetime.strptime(
-                    row[0], "%m/%d/%Y").strftime("%d.%m.%Y")
+                date = datetime.strptime(row[0], "%m/%d/%Y")
+                date_german = date.strftime("%d.%m.%Y")
                 count = int(float(row[1]))
 
                 writer.writerow([date_german, count])
