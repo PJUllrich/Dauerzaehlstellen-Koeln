@@ -1,13 +1,23 @@
 import requests
 import json
 import csv
+import os
 from datetime import datetime, timedelta
 from collections.abc import Iterable
+
 
 ID_KOELN = 677
 URL_COUNTER_LIST = f'https://www.eco-visio.net/api/aladdin/1.0.0/pbl/publicwebpageplus/{ID_KOELN}?withNull=true'
 URL_COUNTER_DATA = 'https://www.eco-visio.net/api/aladdin/1.0.0/pbl/publicwebpageplus/data'
+URL_PROXY_LIST = 'http://pubproxy.com/api/proxy'
 DATEN_FOLDER_PATH = 'daten/'
+
+PROXY_URL = os.environ['PROXY_URL']
+PROXIES = {'http': PROXY_URL, 'https': PROXY_URL}
+
+
+def get(url, params=None):
+    return requests.get(url, params=params, proxies=PROXIES)
 
 
 def hole_datum_des_letzten_updates():
@@ -34,7 +44,7 @@ def hole_daten(von, bis):
 
 # Hole Daten zu allen Dauerzaehlstellen
 def hole_zaehler_uebersicht(save=False):
-    r = requests.get(URL_COUNTER_LIST)
+    r = get(URL_COUNTER_LIST)
     if save:
         with open(DATEN_FOLDER_PATH + 'counter_list.json', 'w') as f:
             json.dump(r.json(), f)
@@ -45,15 +55,16 @@ def hole_zaehler_uebersicht(save=False):
 # Holt die Zählerstände fuer einen Zaehler und speichert diese
 def hole_zaehler_details(cumulFlowId, idPdc, von, bis, filename, append=True, interval=4):
     # interval: 4 = taeglich, 5 = woechentlich, 6 = monatlich
-    url = f'{URL_COUNTER_DATA}/{cumulFlowId}'
-    r = requests.get(url, params={
+    params = {
         'idOrganisme': ID_KOELN,
         'idPdc': idPdc,
         'debut': von,
         'fin': bis,
         'interval': interval,
         'pratiques': idPdc
-    })
+    }
+    url = f'{URL_COUNTER_DATA}/{cumulFlowId}'
+    r = get(url, params)
 
     mode = 'a' if append else 'w'
 

@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-        
+
       - name: Set up Python 3.8
         uses: actions/setup-python@v2
         with:
@@ -20,6 +20,8 @@ jobs:
         run: pip install requests
 
       - name: Update data
+        env:
+          PROXY_URL: ${{secrets.PROXY_URL}}
         run: python3 scripts/hole_daten.py
 
       - name: Commit files
@@ -27,7 +29,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git commit -m "Update data" -a
-          
+
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
