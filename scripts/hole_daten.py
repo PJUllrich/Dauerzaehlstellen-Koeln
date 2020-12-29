@@ -9,7 +9,6 @@ from collections.abc import Iterable
 ID_KOELN = 677
 URL_COUNTER_LIST = f'https://www.eco-visio.net/api/aladdin/1.0.0/pbl/publicwebpageplus/{ID_KOELN}?withNull=true'
 URL_COUNTER_DATA = 'https://www.eco-visio.net/api/aladdin/1.0.0/pbl/publicwebpageplus/data'
-URL_PROXY_LIST = 'http://pubproxy.com/api/proxy'
 DATEN_FOLDER_PATH = 'daten/'
 
 PROXY_URL = os.environ['PROXY_URL']
