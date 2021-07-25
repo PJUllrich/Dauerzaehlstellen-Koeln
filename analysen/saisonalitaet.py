@@ -15,8 +15,9 @@ def plot_df(df, name, linestyle="dotted", **kwargs):
     plt.plot(dg, label=name, linestyle=linestyle, **kwargs)
 
 
-datasets = [1, 2, 4, 5, 6, 13]
-files = LoadData.load(datasets)
+pendlerstrecken = [1, 2, 4, 5, 6, 13]
+freizeitstrecken = [7, 9, 10, 11, 12]
+files = LoadData.load(freizeitstrecken)
 avg_df = pd.DataFrame({"Datum": [], "Zaehlerstand": []})
 
 
@@ -31,6 +32,6 @@ plt.xlim(1, 12)
 plt.grid(True)
 plt.legend()
 plt.title(
-    'Durchschnittliche Radzahlen auf "Pendlerstrecken" pro Monat und Messstelle (Zeitraum 2018 und 2019)'
+    'Durchschnittliche Radzahlen auf "Freizeitstrecken" pro Monat und Messstelle (Zeitraum 2018 und 2019)'
 )
 plt.show()
